@@ -1,0 +1,45 @@
+
+:root {
+ var()
+}
+
+
+header {
+
+    display: flex;
+    align-items: center;
+    color: tan;
+}
+
+header h1 {
+
+    font-style: inherit;
+    color: brown;
+}
+
+.flex-container {
+    display: grid;
+    flex-flow: row wrap;
+    height: 200px;
+    align-content: space-between;
+}
+
+.contact {
+background-color: darkslategrey;
+}
+
+.application {
+background-color: mediumpurple;
+}
+
+.skills {
+background-color:rosybrown;
+}
+
+footer {
+    font-stretch: expanded;
+    font-size: large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    align-content: center; 
+}
+
