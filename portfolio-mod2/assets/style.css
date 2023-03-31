@@ -1,34 +1,14 @@
 * {
   box-sizing: border-box; 
 }
-body {
-  display: flex;
-  min-height: 200px;
-  flex-direction: column;
-  margin: 0;
-}
-#main {
-  display: flex;
-  flex: 1;
-}
-#main > article {
-  flex: 1;
-  background: rgb(107, 138, 101);
-}
-#main > nav, 
-#main > aside {
-  flex: 0 0 18px;
-  background: rgb(100, 143, 137);
-}
-#main > nav {
-  order: -1;
-}
+
+
 header {
     display: flex; 
     min-height: 200px;
     flex-direction: row;
     margin: 0;
-    background: yellowgreen;
+    background: rgb(136, 188, 223);
   }
   header h1 {
     text-align: left;
@@ -36,36 +16,81 @@ header {
 
   header img {
     border: 5px solid black;
+    width: 120px;
+    height: 120px;
   }
+  
+body {
+  display: flex;
+  min-height: 200px;
+  flex-direction: column;
+  margin: 0;
+}
+
+nav {
+  flex: 0 0 10px;
+  background: rgb(144, 163, 161);
+  font-size:larger;
+}
+
+ nav ul a:hover {
+ background-color: rgb(137, 200, 201);
+ color: black;
+ display: in;
+ }
+
+	ul#horizontal-list li {
+		display: inline;
+    border: 2px solid black;
+    padding: 15px;
+    background: lightblue;
+    background-clip: border-box;  
+    padding-left: 10%;
+    padding-right: 10%;  
+    flex:auto;
+}
+	
+
+ aside {
+  flex: 0 0 18px;
+  background: rgb(100, 143, 137);
+}
+
+aside a:hover {
+  background-color: darkturquoise;
+  color: black
+}
+
+article {
+  flex: 1;
+  background: rgb(119, 155, 112);
+
+}
+
+Info {
+  background-color: rgb(83, 114, 114);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
 
 footer {
-  background: yellowgreen;
+  background: rgb(166, 194, 110);
   height: 40px;
   text-align: center;
-  border: 3px solid goldenrod;
+  border: 3px solid rgb(134, 193, 207);
   font-stretch: expanded;
 }
-header, footer, article, nav, aside {
-  padding: 30px;
+header, footer, article, nav, aside, content {
+  padding: 40px;
 }
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 290px) {
   #main {
     flex-direction: column;
-    background-color: tan;
+    background-color: rgb(118, 164, 175);
   }
 }
 
-
-/*
-:root {
- var()
-}
-
-footer {
-    font-stretch: expanded;
-    font-size: large;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    align-content: center; 
-}
-
-*/
