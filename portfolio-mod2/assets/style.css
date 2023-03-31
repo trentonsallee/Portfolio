@@ -10,6 +10,7 @@ header {
     margin: 0;
     background: rgb(136, 188, 223);
   }
+
   header h1 {
     text-align: left;
   }
@@ -42,29 +43,39 @@ nav {
 	ul#horizontal-list li {
 		display: inline;
     border: 2px solid black;
-    padding: 15px;
+    padding: 8px;
     background: lightblue;
     background-clip: border-box;  
     padding-left: 10%;
     padding-right: 10%;  
     flex:auto;
+    text-decoration: none;
+
 }
-	
+
+	article {
+  flex: 1;
+  background: rgb(119, 155, 112);
+}
 
  aside {
   flex: 0 0 18px;
   background: rgb(100, 143, 137);
 }
 
+aside a {
+  color: black;
+text-decoration: none;}
+
 aside a:hover {
   background-color: darkturquoise;
   color: black
 }
 
-article {
-  flex: 1;
-  background: rgb(119, 155, 112);
-
+aside img {
+  border: 5px solid black;
+  width: 120px;
+  height: 60px;
 }
 
 Info {
@@ -73,10 +84,6 @@ Info {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-
-
-
-
 footer {
   background: rgb(166, 194, 110);
   height: 40px;
@@ -84,9 +91,11 @@ footer {
   border: 3px solid rgb(134, 193, 207);
   font-stretch: expanded;
 }
+
 header, footer, article, nav, aside, content {
   padding: 40px;
 }
+
 @media screen and (min-width: 290px) {
   #main {
     flex-direction: column;
